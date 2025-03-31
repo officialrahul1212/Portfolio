@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Happy+Monkey&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rahul Chougule | Portfolio</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <main-header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="img/Logo.png" alt="Logo" />
+        </div>
+        <div class="nav-links">
+          <button onclick="location.href='#about'">About</button>
+          <button onclick="location.href='#contact'">Contact</button>
+          <button onclick="location.href='#projects'">Projects</button>
+        </div>
+        <div class="download-section">
+          <button
+            onclick="location.href='resume/resume.pdf'"
+            class="download-btn"
+          >
+            Download
+          </button>
+          <div class="resume-tooltip">Resume</div>
+          <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </div>
+      </nav>
+    </main-header>
+
+    <!-- main -->
+    <main>
+      <section class="first-section">
+        <div class="left-section">
+          Hi,👋 My name is <span class="name">Rahul</span>
+          <div>and I am passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="right-section">
+          <img src="img/rahul.jpg" alt="img" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Projects Section -->
+    <section id="projects" class="Second-section">
+      <button class="project-btn">Projects</button>
+
+      <p class="para">
+        I love making websites that can grow big, finding useful solutions, and
+        always learning to get better in the IT world.
+      </p>
+      <div class="projects">
+        <div class="project" style="grid-area: one; position: relative">
+          <img src="img/myntra.png" alt="Project 1" />
+          <div class="icons">
+            <a
+              href="https://github.com/officialrahul1212/Myntra-clone?tab=readme-ov-file"
+              target="_blank"
+              ><img src="img/github.gif" alt="GitHub"
+            /></a>
+            <a
+              href="https://officialrahul1212.github.io/Myntra-clone/"
+              target="_blank"
+              ><img src="img/www.gif" alt="Live Web"
+            /></a>
+          </div>
+          <div class="project-name">Myntra-clone</div>
+        </div>
+        <div class="project" style="grid-area: two; position: relative">
+          <img src="img/BatBoll.png" alt="Project 2" />
+          <div class="icons">
+            <a
+              href="https://github.com/officialrahul1212/Bat-Ball-Stump-Game?tab=readme-ov-file"
+              target="_blank"
+              ><img src="img/github.gif" alt="GitHub"
+            /></a>
+            <a
+              href="https://officialrahul1212.github.io/Bat-Ball-Stump-Game/"
+              target="_blank"
+              ><img src="img/www.gif" alt="Live Web"
+            /></a>
+          </div>
+          <div class="project-name">Bat-Ball-Stump-Game</div>
+        </div>
+        <div class="project" style="grid-area: three; position: relative">
+          <img src="img/todo.png" alt="Project 3" />
+          <div class="icons">
+            <a
+              href="https://github.com/officialrahul1212/To-Do-List"
+              target="_blank"
+              ><img src="img/github.gif" alt="GitHub"
+            /></a>
+            <a
+              href="https://officialrahul1212.github.io/To-Do-List/"
+              target="_blank"
+              ><img src="img/www.gif" alt="Live Web"
+            /></a>
+          </div>
+          <div class="project-name">To-Do-List</div>
+        </div>
+        <div class="project" style="grid-area: four; position: relative">
+          <img src="img/t.png" alt="Project 4" />
+          <div class="icons">
+            <a
+              href="https://github.com/officialrahul1212/Tour_and_Travel_website"
+              target="_blank"
+              ><img src="img/github.gif" alt="GitHub"
+            /></a>
+            <a
+              href="https://github.com/officialrahul1212/Tour_and_Travel_website"
+              target="_blank"
+              ><img src="img/www.gif" alt="Live Web"
+            /></a>
+          </div>
+          <div class="project-name">Tour_&_Travel</div>
+        </div>
+        <div class="project" style="grid-area: five; position: relative">
+          <img src="img/a.png" alt="Project 5" />
+          <div class="icons">
+            <a
+              href="https://github.com/officialrahul1212/Alumni_Management_System-Website"
+              target="_blank"
+              ><img src="img/github.gif" alt="GitHub"
+            /></a>
+            <a
+              href="https://github.com/officialrahul1212/Alumni_Management_System-Website"
+              target="_blank"
+              ><img src="img/www.gif" alt="Live Web"
+            /></a>
+          </div>
+          <div class="project-name">Alumni_Management_System</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- experties -->
+    <section class="Third-section">
+      <div class="experties-container">
+        <div class="title-section">
+          <div class="experties-title">EXPERTISE</div>
+          <img src="img/expertie.gif" alt="Expertise Logo" />
+        </div>
+      </div>
+      <div class="experties-containers">
+        <div class="cards">
+          <div class="card">
+            <div class="title">Frontend</div>
+            <img src="img/frontend-development.png" alt="Frontend" />
+            <div class="desc">
+              As a Frontend Developer,I have learned React.js, HTML, CSS, and
+              JavaScript to create responsive and user-friendly web interfaces.
+              I am familiar with frameworks like Bootstrap and Tailwind CSS for
+              designing modern layouts. I am eager to apply my skills, learn new
+              technologies, and build better web experiences.
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Backend</div>
+            <img src="img/Back-End.jpg" alt="Backend" />
+            <div class="desc">
+              As a Backend Developer,I have a basic understanding of Java,
+              Node.js, and Express.js for backend development. I am familiar
+              with databases like MongoDB, SQL, MySQL, and Oracle. I am eager to
+              learn and build efficient backend systems to support web
+              applications.
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">UI/UX</div>
+            <img src="img/Ui-Ux.jpg" alt="UI/UX" />
+            <div class="desc">
+              As a UI/UX Designer,I have learned the principles of UI/UX design
+              to create visually appealing and user-friendly interfaces. I am
+              familiar with tools like Figma for designing. My focus is on
+              improving user experience and responsive designs. I am eager to
+              apply my skills and learn more in the field of UI/UX
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Data-Analyst</div>
+            <img src="img/Data-Analyst.jpg" alt="Data-Analyst" />
+            <div class="desc">
+              As a Data Analyst,I have learned the fundamentals of Data
+              Analytics, including data collection, processing, and
+              visualization. I am familiar with tools like Excel, SQL, Python
+              (Pandas, NumPy, Matplotlib). I am eager to apply my skills to
+              uncover insights and support data-driven decision-making
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill section -->
+    <section class="Fourth-section">
+      <div class="skill-container">
+        <div class="left">
+          My SkillBox
+          <img src="img/box.gif" alt="Logo" class="logo" />
+        </div>
+        <div class="right">
+          <button class="skill-btn html">HTML</button>
+          <button class="skill-btn css">CSS</button>
+          <button class="skill-btn js">JavaScript</button>
+          <button class="skill-btn boostrap">Bootstrap</button>
+          <button class="skill-btn tc">Tailwind CSS</button>
+          <button class="skill-btn php">PHP</button>
+          <button class="skill-btn react">React</button>
+          <button class="skill-btn java">Java</button>
+          <button class="skill-btn sql">SQL</button>
+          <!-- <button class="skill-btn node">Node.js</button> -->
+          <!-- <button class="skill-btn express">Express.js</button> -->
+          <button class="skill-btn python">Python</button>
+          <!-- <button class="skill-btn mongo">MongoDB</button> -->
+          <button class="skill-btn mysql">MySQL</button>
+          <button class="skill-btn figma">Figma</button>
+          <!-- <button class="skill-btn adobe">Adobe XD</button> -->
+          <button class="skill-btn github">GitHub</button>
+          <button class="skill-btn Vs">Visual Studio Code</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- certificate-scrolling  -->
+    <div class="scrolling-text-container">
+      <div
+        class="scrolling-text-inner"
+        style="--marquee-speed: 20s; --direction: scroll-left"
+        role="marquee"
+      >
+        <div class="scrolling-text">
+          <div class="scrolling-text-item">Certificate</div>
+          <div class="scrolling-text-item">.Certificate</div>
+          <div class="scrolling-text-item">.Certificate</div>
+          <div class="scrolling-text-item">.Certificate</div>
+          <div class="scrolling-text-item">.Certificate</div>
+          <div class="scrolling-text-item">.Certificate</div>
+          <div class="scrolling-text-item">.Certificate.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- certificate-section  -->
+    <section class="Fifth-section">
+      <div class="certificate-container">
+        <div class="certificate-right">
+          <div class="certificate-wrapper">
+            <div class="certificate-icon">
+              <a href="https://www.hackerrank.com/certificates/8e0baeef1e9e"
+                ><img src="img/share.png" alt="Icon"
+              /></a>
+            </div>
+            <img src="img/hackerrank-css.png" alt="Certificate 1" />
+          </div>
+          <div class="certificate-wrapper">
+            <div class="certificate-icon">
+              <a href="https://lnkd.in/defXptcg"
+                ><img src="img/share.png" alt="Icon"
+              /></a>
+            </div>
+            <img src="img/java.jpg" alt="Certificate 2" />
+          </div>
+          <div class="certificate-wrapper">
+            <div class="certificate-icon">
+              <a href="https://lnkd.in/db-BFVDN"
+                ><img src="img/share.png" alt="Icon"
+              /></a>
+            </div>
+            <img src="img/aws.jpg" alt="Certificate 3" />
+          </div>
+          <div class="certificate-wrapper">
+            <div class="certificate-icon">
+              <a href="https://www.mygreatlearning.com/certificate/HRUZVLJQ"
+                ><img src="img/share.png" alt="Icon"
+              /></a>
+            </div>
+            <img src="img/python.png" alt="Certificate 4" />
+          </div>
+          <div class="certificate-wrapper">
+            <div class="certificate-icon">
+              <a href="https://www.mygreatlearning.com/certificate/STNVLBHI"
+                ><img src="img/share.png" alt="Icon"
+              /></a>
+            </div>
+            <img src="img/info.png" alt="Certificate 5" />
+          </div>
+          <div class="certificate-wrapper">
+            <div class="certificate-icon">
+              <a href="https://www.mygreatlearning.com/certificate/PWNGLEUX"
+                ><img src="img/share.png" alt="Icon"
+              /></a>
+            </div>
+            <img src="img/cyber.png" alt="Certificate 6" />
+          </div>
+          <div class="certificate-wrapper">
+            <div class="certificate-icon">
+              <a href="#"><img src="img/share.png" alt="Icon" /></a>
+            </div>
+            <img src="img/DA.png" alt="Certificate 7" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About-section  -->
+    <section id="about" class="six-section">
+      <div class="about-container">
+        <!-- about-left Section -->
+        <div class="about-left">
+          <h1>- About Me</h1>
+          <div class="about-head">
+            <span class="highlight"
+              >Hey there!👋,
+              I'm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >
+          </div>
+
+          <div class="elements"><span id="elements"></span></div>
+
+          <p class="description">
+            I am a passionate Full Stack PHP Developer, Data Analyst, and UI/UX
+            Designer currently pursuing my MCA. I have expertise in web
+            development, backend programming, and database management, along
+            with a strong understanding of UI/UX design. I am committed to
+            continuous learning and problem-solving, always striving to build
+            efficient and user-friendly applications. My goal is to stay updated
+            with the latest technologies and develop impactful digital
+            solutions.
+          </p>
+          <p class="description">
+            As a Full-Stack PHP Developer Intern at Seven Segment Web Solutions,
+            I contributed to the Alumni Management System project, focusing on
+            frontend and backend development. I worked on database management,
+            feature development, and system optimization to enhance
+            functionality. At Codesoft, I gained hands-on experience in web
+            development, UI/UX improvement, and real-world project execution.
+          </p>
+
+          <a href="resume/resume.pdf" class="about-download-btn" download
+            >📄 Download Resume</a
+          >
+        </div>
+
+        <!-- about-right Section (Profile Image & Social Links) -->
+        <div class="about-right">
+          <a href="profile.jpg" target="_blank">
+            <img
+              src="img/rahul1.png"
+              alt="Rahul Chougule"
+              class="profile-img"
+            />
+          </a>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/rahulchougule05/"
+              target="_blank"
+            >
+              <img src="img/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/officialrahul1212" target="_blank">
+              <img src="img/github.gif" alt="GitHub" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="img/www.gif" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div id="contact" class="footer-left">
+        <h2>Rahul Chougule</h2>
+        <p>
+          I'm Rahul Chougule, a junior and talented Web Developer with Web
+          Designer skills.
+        </p>
+        <hr />
+        <div class="email-section">
+          <img src="img/email.png" alt="Email" />
+          <a href="mailto:chougulerahul2002@gmail.com"
+            >chougulerahul2002@gmail.com</a
+          >
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="#top">Home</a>
+        <a href="#">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/rahulchougule05/" target="_blank"
+            ><img
+              src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"
+              alt="LinkedIn"
+          /></a>
+          <img
+            src="https://img.icons8.com/ios-filled/50/000000/twitter.png"
+            alt="Twitter"
+          />
+          <a href="https://github.com/officialrahul1212" target="_blank"
+            ><img
+              src="https://img.icons8.com/ios-filled/50/000000/github.png"
+              alt="GitHub"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        var windowHeight = window.innerHeight;
+        return (
+          rect.top < windowHeight * 0.99 && rect.bottom >= windowHeight * 0.01
+        );
+      }
+
+      document.addEventListener("scroll", function () {
+        let title = document.querySelector(".title-section");
+        let cards = document.querySelector(".cards");
+        if (isElementInViewport(title)) {
+          cards.style.opacity = "1";
+          document.querySelectorAll(".card").forEach((card, index) => {
+            card.style.opacity = "1";
+            card.style.transform = "translateX(0)";
+            card.style.transitionDelay = `${index * 0.7}s`;
+          });
+        }
+      });
+    </script>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Full Stack Developer ",
+          "Web Designer",
+          " Data Analyst",
+          "UI/UX Designer",
+        ],
+        typeSpeed: 50,
+        loop: true,
+      });
+
+      var typed = new Typed("#elements", {
+        strings: [
+          "RAHUL CHOUGULE",
+          "WEB DEVELOPER",
+          "UI/UX DESIGNER",
+          "DATA ANALYST ",
+        ],
+        typeSpeed: 50,
+        backSpeed: 25,
+        backDelay: 1000,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
